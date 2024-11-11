@@ -28,8 +28,23 @@ h1{
     margin: 0 auto;
     height: 30px;
     overflow: hidden;
-
     background-color: rgb(104, 168, 8);
     display: flex;
     justify-content: space-between;
+
+}
+
+input{
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background: transparent;
+    flex-grow: 1;
+}
+
+button{
+    background-color: rgb(51, 78, 10);
+    color: white;
+    border: none;
+    width: 50px;
 }

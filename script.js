@@ -4,12 +4,17 @@ const button = document.getElementById("button");
 
 button.addEventListener("click", addItemFunc)
 
-function addItem(){
+function addItemFunc(){
     if(inputContent.value === ""){
     alert("Put a valid input")
  }else{
     let li = document.createElement("li");
     li.innerHTML = inputContent.value;
     output.appendChild(li)
+    let span = document.createElement("span")
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
  }
+ inputContent.value = ""
+ saveData()
 }

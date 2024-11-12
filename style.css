@@ -72,3 +72,27 @@ ul li::before{
     background-position: center;
     background-size: cover;
 }
+
+.checked{
+    background-color: rgb(167, 164, 164);
+    text-decoration: line-through;
+}
+
+.checked::before{
+    background-image: url(check.png);
+}
+
+span{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+span:hover{
+    background-color: rgb(115, 160, 47);
+    transform: scale(2);
+}

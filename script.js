@@ -25,5 +25,10 @@ output.addEventListener("click", function(e){
         saveData()
     }else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove()
+        saveData()
     }
 })
+
+function saveData(){
+    
+}

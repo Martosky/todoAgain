@@ -30,5 +30,10 @@ output.addEventListener("click", function(e){
 })
 
 function saveData(){
-    
+    localStorage.setItem("data", output.innerHtml)
 }
+
+function showData(){
+    output.innerHTML = localStorage.setItem("data")
+}
+showData()
